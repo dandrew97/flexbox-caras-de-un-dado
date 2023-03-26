@@ -1,0 +1,139 @@
+body {
+    margin: 15px; /* Margen externa aplicada al body*/
+    padding: 0; /* Margen interna dentro del body */
+    font-family: 'Courier New', Courier, monospace; /* tipo de fuente aplicada a todo el texto que figure dentro del boddy */
+    background-color: rgb(72, 168, 176); /* color de fondo al body */
+    color: white; /*Color que se aplica al texto contenido dentro del body */ 
+}
+
+.header { 
+    padding: 50px; /* Margen interna aplicada a todos los elementos contenidos dentro de header */
+}
+
+.header h1 {
+    font-weight: 700; /* Tamaño de la fuente */
+    text-align: center; /* alineación del titulo */
+}
+
+.header img {
+    width: 200px; /*Ancho de la imagen*/
+    height: 200px; /*Alto de la imagen*/
+}
+
+section {
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+    justify-content: center; /* Esta propiedad del contenedor flex permite alinear los elementos al centro */
+    flex-wrap: wrap; /* Esta propiedad permite que los elementos dentro de este contenedor cambien de linea cuando no haya más espacio en la pantalla, además ayuda en el tema de responsive */
+}
+
+.punto {
+    width: 20px; /* Ancho del punto */
+	height: 20px; /*Alto del punto*/
+	border-radius: 50%; /* Le da el aspecto rendondo */
+	background: black; /*Color del punto */
+	box-shadow: inset 0 3px #111, inset 0 -3px #555; /*Esta propiedad permite agragarle una sombra al punto*/
+}
+
+.cara1 {
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+	margin: 1em; /* Margen externa del cuadro que contiene la cara de un punto */
+	width: 150px; /* Ancho del cuadro */
+	height: 150px; /*Alto del cuadro*/
+	padding: 15px; /*Margen Interna del cuadro que contiene la cara de un ounto*/
+	background: #FEFEF6; /*Color de fondo */
+	border-radius: 10%; /*Esta propiedad le da un contorno redondeado a las esquinas del cuadrado */
+    justify-content: center; /* Esta propiedad poner los elementos en el centro */
+    align-items: center; /*los elementos aparecen agrupados al centro de la caja. */
+}
+
+.cara2 {
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+	margin: 1em; /* Margen externa del cuadro que contiene la cara de un punto */
+	width: 150px; /* Ancho del cuadro */
+	height: 150px; /*Alto del cuadro*/
+	padding: 15px; /*Margen Interna del cuadro que contiene la cara de un ounto*/
+	background: #FEFEF6; /*Color de fondo */
+	border-radius: 10%; /*Esta propiedad le da un contorno redondeado a las esquinas del cuadrado */
+    justify-content: space-between; /* Esta propiedad hace que los elementos aparezcan distribuidos uniformemente con un espacio entre ellos*/
+}
+
+.cara2 .punto:nth-child(2) { /* Aqui modificados solo el contenedor hijo del punto 2, por eso se usa la pseudoclase nth-child() que modifica unicamente al elemento 2 dentro del contenedor cara2*/ 
+    align-self: flex-end; /* Este propiedad permite agrupar individualmente los elementos al final de la caja dentro del eje secundario */ 
+}
+
+.cara3 {
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+	margin: 1em; /* Margen externa del cuadro que contiene la cara de un punto */
+	width: 150px; /* Ancho del cuadro */
+	height: 150px; /*Alto del cuadro*/
+	padding: 15px; /*Margen Interna del cuadro que contiene la cara de un ounto*/
+	background: #FEFEF6; /*Color de fondo */
+	border-radius: 10%; /*Esta propiedad le da un contorno redondeado a las esquinas del cuadrado */
+	justify-content: space-between; /* Esta propiedad hace que los elementos aparezcan distribuidos uniformemente con un espacio entre ellos*/
+}
+
+.cara3 .punto:nth-child(2) {
+    align-self: center; /* Este propiedad permite agrupar individualmente los elementos en el centro de la caja dentro del eje secundario */ 
+}
+
+.cara3 .punto:nth-child(3) {
+    align-self: flex-end; /* Este propiedad permite agrupar individualmente los elementos al final de la caja dentro del eje secundario */ 
+}
+
+.cara4 {
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+	margin: 1em; /* Margen externa del cuadro que contiene la cara de un punto */
+	width: 150px; /* Ancho del cuadro */
+	height: 150px; /*Alto del cuadro*/
+	padding: 15px; /*Margen Interna del cuadro que contiene la cara de un ounto*/
+	background: #FEFEF6; /*Color de fondo */
+	border-radius: 10%; /*Esta propiedad le da un contorno redondeado a las esquinas del cuadrado */
+	justify-content: space-between; /* Esta propiedad hace que los elementos aparezcan distribuidos uniformemente con un espacio entre ellos*/
+}
+
+.cara4 .columna { /* Aqui modificaremos la cara 4 y las clases llamadas columnas para ajustarlas a la propiedad flexbox */
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+	flex-direction: column; /* Esta propiedad coloca los elementos flex verticalmente y de arriba abajo (en columna)*/ 
+	justify-content: space-between; /* Esta propiedad hace que los elementos aparezcan distribuidos uniformemente con un espacio entre ellos*/
+}
+
+.cara5 {
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+	margin: 1em; /* Margen externa del cuadro que contiene la cara de un punto */
+	width: 150px; /* Ancho del cuadro */
+	height: 150px; /*Alto del cuadro*/
+	padding: 15px; /*Margen Interna del cuadro que contiene la cara de un ounto*/
+	background: #FEFEF6; /*Color de fondo */
+	border-radius: 10%; /*Esta propiedad le da un contorno redondeado a las esquinas del cuadrado */
+	justify-content: space-between; /* Esta propiedad hace que los elementos aparezcan distribuidos uniformemente con un espacio entre ellos*/
+}
+
+.cara5 .columna { /* Aqui modificaremos la cara 4 y las clases llamadas columnas para ajustarlas a la propiedad flexbox */
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+	flex-direction: column; /* Esta propiedad coloca los elementos flex verticalmente y de arriba abajo (en columna)*/ 
+	justify-content: space-between; /* Esta propiedad hace que los elementos aparezcan distribuidos uniformemente con un espacio entre ellos*/
+}
+
+.cara5 .medio {
+    align-self: center; /* Este propiedad permite agrupar individualmente los elementos en el centro de la caja dentro del eje secundario */
+}
+
+.cara6 {
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+	margin: 1em; /* Margen externa del cuadro que contiene la cara de un punto */
+	width: 150px; /* Ancho del cuadro */
+	height: 150px; /*Alto del cuadro*/
+	padding: 15px; /*Margen Interna del cuadro que contiene la cara de un ounto*/
+	background: #FEFEF6; /*Color de fondo */
+	border-radius: 10%; /*Esta propiedad le da un contorno redondeado a las esquinas del cuadrado */
+	justify-content: space-between; /* Esta propiedad hace que los elementos aparezcan distribuidos uniformemente con un espacio entre ellos*/
+}
+
+.cara6 .columna {
+    display: flex; /* Esta propiedad permite aplicar el flexbox a los elementos dentro de esta etiqueta */
+	flex-direction: column; /* Esta propiedad coloca los elementos flex verticalmente y de arriba abajo (en columna)*/ 
+	justify-content: space-between; /* Esta propiedad hace que los elementos aparezcan distribuidos uniformemente con un espacio entre ellos*/
+}
+
+
+

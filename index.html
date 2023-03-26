@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>ejercicio dado en flexbox</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo"> 
+            Ejercicio Practico - Caras de un dado en flexbox
+        </h1>
+        <div class="imagDados" style="text-align: center;">
+            <img src="assets/pictures/dados.png" alt="dados.png">
+        </div>
+    </header>
+
+    <section>  <!-- Se crea un contenedor que tenga todos las caras de los dados -->
+        
+        <div class="cara1"> <!-- Se crea un contenedor div para cada cara-->
+            <span class="punto"></span> <!-- Este tipo de etiqueta es un contenedor que permite poner estilos o agragar atributos sin crear nuevas lineas de contenido, en este caso cada punto va estar contenido dentro de esta etiqueta -->
+        </div>
+
+        <div class="cara2"> 
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div>
+
+        <div class="cara3"> 
+            <span class="punto"></span>
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div>
+
+        <div class="cara4">
+            <div class="columna">  <!-- Se crea una etiqueta que contenga cada columna de a dos puntos, esto con el fin de ubicarlos mejor en css mediante flexbox-->
+                <span class="punto"></span>
+                <span class="punto"></span>                    
+            </div>
+            <div class="columna"> 
+                <span class="punto"></span>
+                <span class="punto"></span>                    
+            </div>                
+        </div>
+
+        <div class="cara5">
+            <div class="columna">  <!-- Se crea una etiqueta que contenga cada columna de a dos puntos, esto con el fin de ubicarlos mejor en css mediante flexbox-->
+                <span class="punto"></span>
+                <span class="punto"></span>                    
+            </div>
+            <span class="punto medio"></span>
+            <div class="columna">  <!-- Se crea una etiqueta que contenga cada columna de a dos puntos, esto con el fin de ubicarlos mejor en css mediante flexbox-->
+                <span class="punto"></span>
+                <span class="punto"></span>                    
+            </div>
+        </div>
+
+        <div class="cara6">
+            <div class="columna">  <!-- Se crea una etiqueta que contenga cada columna de a dos puntos, esto con el fin de ubicarlos mejor en css mediante flexbox-->
+                <span class="punto"></span>
+                <span class="punto"></span>   
+                <span class="punto"></span>                    
+            </div>
+            <div class="columna">  <!-- Se crea una etiqueta que contenga cada columna de a dos puntos, esto con el fin de ubicarlos mejor en css mediante flexbox-->
+                <span class="punto"></span>
+                <span class="punto"></span>   
+                <span class="punto"></span>                    
+            </div>
+        </div>
+    </section>
+</body>
+</html>
